@@ -1,4 +1,4 @@
-# Regressão Logistica para identificação de Câncer de Mama
+# Regressão Logistica para classificação de tumores em mamas
 
 Este projeto utiliza **regressão logística** para classificar tumores de mama como **malignos** ou **benignos**, com base em características extraídas de imagens de exames.
 Há, além dos códigos do modelo um arquivo com explicações teóricas. No código também há comentários que tentam explicar cada parte do código. 
