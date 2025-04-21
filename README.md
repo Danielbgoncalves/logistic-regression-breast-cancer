@@ -10,16 +10,16 @@ Utilizei o [Breast Cancer Wisconsin Diagnostic Dataset](https://archive.ics.uci.
 ### Colunas utilizadas:
 Foram selecionadas as **10 médias** principais:
 
-- `radius_mean`
-- `texture_mean`
-- `perimeter_mean`
-- `area_mean`
-- `smoothness_mean`
-- `compactness_mean`
-- `concavity_mean`
-- `concave_points_mean`
-- `symmetry_mean`
-- `fractal_dimension_mean`
+- `radius_mean` Média do raio (distância do centro até a borda da célula)
+- `texture_mean` Média da textura (variação na intensidade dos pixels)
+- `perimeter_mean` Média do perímetro (contorno da célula)
+- `area_mean` Média da área (tamanho da célula)
+- `smoothness_mean` Média da suavidade (uniformidade das bordas)
+- `compactness_mean` Média da compacidade (relação entre área e perímetro — quão "fechada" é a forma)
+- `concavity_mean` Média da concavidade (grau de reentrância das bordas)
+- `concave_points_mean` Média dos pontos côncavos (número de pontas reentrantes na borda)
+- `symmetry_mean`  Média da simetria (quão simétrica é a célula)
+- `fractal_dimension_mean` Média da dimensão fractal (medida da complexidade da forma da borda)
 
 A coluna `diagnosis` foi usada como rótulo (`M` para maligno, `B` para benigno). Converti para `1` e `0` respectivamente.
 
@@ -35,7 +35,7 @@ A coluna `diagnosis` foi usada como rótulo (`M` para maligno, `B` para benigno)
 ---
 ## Resultados
 
-Um modelo simples como o produzirdo aqui (menos de 100 linhas) foi capaz de atingir acurácia de 96.49% Isso demonstra o poder desse tipo de modelo.
+Um modelo simples como o produzirdo aqui (menos de 100 linhas) foi capaz de atingir acurácia de 96.49% O que é ótimo e demonstra o poder desse tipo de modelo.
 A matriz de confusão a seguir demonstra:
 
 ![matriz de confusão do modelo: uma matriz 2x2, 71 no canto esquerdo acima, 0 no direito acima, 4 no esquerdo de baixo e 39 no direito de baixo ](matriz_confusao.png)
